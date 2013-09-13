@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   Copyright (C) 2013 John Considine -->
+
+
+<!--
+     This layout is used by DirectionDetailFragment to show direction details: from address, to address
+     inside a ScrollView.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@integer/distance_detail_info_percent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/distance_name"
+            style="@style/DistanceNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:paddingTop="@dimen/padding"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/distance_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--
+         This view will be displayed when the views above are hidden. That happens when in two-pane
+         layout mode and no contact is currently selected and therefore the this fragment will
+         simply show a text message instead of contact details.
+    -->
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/no_distance_selected"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+</FrameLayout>

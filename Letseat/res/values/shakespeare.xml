@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titles">
+        <item>All\'s Well That Ends Well</item>
+        <item>Antony and Cleopatra</item>
+        <item>As You Like It</item>
+        <item>Comedy of Error</item>
+        <item>Coriolanus</item>
+        <item>Cymbeline</item>
+        <item>Hamlet</item>
+        <item>1 Henry IV</item>
+        <item>2 Henry IV</item>
+        <item>Henry V</item>
+    </string-array>
+    <string-array name="dialogue">
+        <item>Dialog 1</item>
+        <item>Dialog 2</item>
+        <item>Dialog 3</item>
+        <item>Dialog 4</item>
+        <item>Dialog 5</item>
+        <item>Dialog 6</item>
+        <item>Dialog 7</item>
+        <item>Dialog 8</item>
+        <item>Dialog 9</item>
+        <item>Dialog 10</item>
+    </string-array>
+</resources>
